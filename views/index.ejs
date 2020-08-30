@@ -8,6 +8,12 @@
     <nav>
       <a href="/flights">All Surf Sites</a>
       <a href="/flights/new">Add new Surf Site</a>
+      <% if (user) { %>
+        <a href="/logout">Log Out</a>
+      <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+      <% } %>
+
     </nav>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
